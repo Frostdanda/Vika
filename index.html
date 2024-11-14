@@ -1,0 +1,251 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   RolePlay Forum
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        .navbar, .forum-list {
+            background-color: #161b22;
+        }
+        .forum-item {
+            background-color: #21262d;
+        }
+        .forum-item:hover {
+            background-color: #30363d;
+        }
+        .badge {
+            background-color: #e53e3e;
+            color: white;
+            padding: 0.2rem 0.4rem;
+            border-radius: 0.2rem;
+            font-size: 0.75rem;
+        }
+        .active {
+            background-color: #2563eb;
+        }
+        .hidden {
+            display: none;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="bg-gray-800 p-4 flex justify-between items-center">
+    <div class="flex items-center">
+     <button class="bg-gray-700 text-white px-4 py-2 rounded mr-4" id="homeButton" onclick="showHome()">
+      Home
+     </button>
+     <button class="bg-gray-700 text-white px-4 py-2 rounded mr-4" id="filesButton" onclick="showFiles()">
+      Files
+     </button>
+     <button class="bg-gray-700 text-white px-4 py-2 rounded" id="infoButton" onclick="showInformation()">
+      Information
+     </button>
+    </div>
+   </div>
+   <div class="forum-list p-4" id="home">
+    <div class="forum-item p-4 mb-2 flex justify-between items-center">
+     <div class="flex items-center">
+      <i class="fas fa-comments text-white mr-2">
+      </i>
+      <span class="text-white">
+       General Information
+      </span>
+     </div>
+     <div class="flex items-center">
+      <span class="text-white mr-4">
+       1 Topics
+      </span>
+      <span class="text-white">
+       1 Posts
+      </span>
+     </div>
+    </div>
+    <div class="forum-item p-4 mb-2 flex justify-between items-center">
+     <div class="flex items-center">
+      <i class="fas fa-comments text-white mr-2">
+      </i>
+      <span class="text-white">
+       Phoenix
+      </span>
+     </div>
+     <div class="flex items-center">
+      <span class="text-white mr-4">
+       14 Topics
+      </span>
+      <span class="text-white">
+       314 Posts
+      </span>
+     </div>
+    </div>
+    <div class="forum-item p-4 mb-2 flex justify-between items-center">
+     <div class="flex items-center">
+      <i class="fas fa-comments text-white mr-2">
+      </i>
+      <span class="text-white">
+       Tucson
+      </span>
+     </div>
+     <div class="flex items-center">
+      <span class="text-white mr-4">
+       13 Topics
+      </span>
+      <span class="text-white">
+       333 Posts
+      </span>
+     </div>
+    </div>
+    <div class="forum-item p-4 mb-2 flex justify-between items-center">
+     <div class="flex items-center">
+      <i class="fas fa-comments text-white mr-2">
+      </i>
+      <span class="text-white">
+       Scottdale
+      </span>
+     </div>
+     <div class="flex items-center">
+      <span class="text-white mr-4">
+       15 Topics
+      </span>
+      <span class="text-white">
+       414 Posts
+      </span>
+     </div>
+    </div>
+    <div class="forum-item p-4 mb-2 flex justify-between items-center">
+     <div class="flex items-center">
+      <i class="fas fa-comments text-white mr-2">
+      </i>
+      <span class="text-white">
+       Chandler
+      </span>
+     </div>
+     <div class="flex items-center">
+      <span class="text-white mr-4">
+       8 Topics
+      </span>
+      <span class="text-white">
+       114 Posts
+      </span>
+     </div>
+    </div>
+    <div class="forum-item p-4 mb-2 flex justify-between items-center">
+     <div class="flex items-center">
+      <i class="fas fa-comments text-white mr-2">
+      </i>
+      <span class="text-white">
+       Brainburg
+      </span>
+     </div>
+     <div class="flex items-center">
+      <span class="text-white mr-4">
+       10 Topics
+      </span>
+      <span class="text-white">
+       1.3K Posts
+      </span>
+     </div>
+    </div>
+    <div class="forum-item p-4 mb-2 flex justify-between items-center">
+     <div class="flex items-center">
+      <i class="fas fa-comments text-white mr-2">
+      </i>
+      <span class="text-white">
+       Saint Rose
+      </span>
+     </div>
+     <div class="flex items-center">
+      <span class="text-white mr-4">
+       8 Topics
+      </span>
+      <span class="text-white">
+       130 Posts
+      </span>
+     </div>
+    </div>
+   </div>
+   <div class="hidden p-4" id="information">
+    <div class="flex flex-col items-center">
+     <img alt="Avatar" class="rounded-full mb-4" height="150" src="https://cdn.discordapp.com/attachments/1026781780084260925/1306757188383019128/1652216537_3-kartinkin-net-p-rik-i-morti-kartinki-na-avu-3.png?ex=6737d3f8&is=67368278&hm=d9ae26f3bc6d3cb84f8cd0af693d34861a825cadd1e7716aa6de4b68772fe0d3" width="150"/>
+     <h2 class="text-2xl mb-2">
+      About Me
+     </h2>
+     <p class="text-center mb-4">
+      This is a brief description about me. I am a web developer with a passion for creating beautiful and functional websites.
+     </p>
+     <div class="flex space-x-4">
+      <a class="text-blue-500" href="#">
+       <i class="fab fa-facebook">
+       </i>
+      </a>
+      <a class="text-blue-400" href="#">
+       <i class="fab fa-twitter">
+       </i>
+      </a>
+      <a class="text-pink-500" href="#">
+       <i class="fab fa-instagram">
+       </i>
+      </a>
+      <a class="text-blue-600" href="#">
+       <i class="fab fa-linkedin">
+       </i>
+      </a>
+     </div>
+    </div>
+   </div>
+   <div class="hidden p-4" id="files">
+    <div class="flex flex-col items-center">
+     <h2 class="text-2xl mb-2">
+      Files
+     </h2>
+     <p class="text-center mb-4">
+      This is the files section. Here you can find all the files related to the forum.
+     </p>
+    </div>
+   </div>
+  </div>
+  <script>
+   function showInformation() {
+            document.getElementById('home').classList.add('hidden');
+            document.getElementById('files').classList.add('hidden');
+            document.getElementById('information').classList.remove('hidden');
+            document.getElementById('homeButton').classList.remove('active');
+            document.getElementById('filesButton').classList.remove('active');
+            document.getElementById('infoButton').classList.add('active');
+        }
+
+        function showHome() {
+            document.getElementById('information').classList.add('hidden');
+            document.getElementById('files').classList.add('hidden');
+            document.getElementById('home').classList.remove('hidden');
+            document.getElementById('infoButton').classList.remove('active');
+            document.getElementById('filesButton').classList.remove('active');
+            document.getElementById('homeButton').classList.add('active');
+        }
+
+        function showFiles() {
+            document.getElementById('information').classList.add('hidden');
+            document.getElementById('home').classList.add('hidden');
+            document.getElementById('files').classList.remove('hidden');
+            document.getElementById('infoButton').classList.remove('active');
+            document.getElementById('homeButton').classList.remove('active');
+            document.getElementById('filesButton').classList.add('active');
+        }
+  </script>
+ </body>
+</html>
